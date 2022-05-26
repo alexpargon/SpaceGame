@@ -1,0 +1,27 @@
+.NavContainer {
+  height: -webkit-fill-available;
+  display: flex;
+  .navbar {
+    display: block;
+    padding: 1.5vw;
+    .navbar-brand {
+      font-size: 1.75rem;
+    }
+    a {
+      width: -webkit-fill-available;
+      text-align: center;
+      padding-left: 0;
+      padding-right: 0;
+      padding-bottom: 1vh;
+      padding-top: 1vh;
+      margin: 0;
+      transition: all 0.2s ease-in-out;
+    }
+    .navbar-nav {
+      display: block;
+    }
+    .nav-link:hover {
+      transform: scale(1.2);
+    }
+  }
+}

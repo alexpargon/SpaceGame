@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'Solaris';
+  src: url('../fonts/Solaris.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Solaris', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.3vw;
+}
+div.card-header {
+  font-size: larger;
+}
+#root {
+  height: 100%;
+  overflow: hidden;
+}

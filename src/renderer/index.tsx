@@ -1,0 +1,26 @@
+import { createRoot } from 'react-dom/client';
+import { HashRouter as Router } from 'react-router-dom';
+import { Provider } from 'react-redux';
+
+import store from './components/redux/store.js';
+import App from './App.js';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './assets/styles/style.scss';
+
+const container = document.getElementById('root')!;
+const root = createRoot(container);
+root.render(
+  <Provider store={store}>
+    <Router>
+      <App />
+    </Router>
+  </Provider>
+);
+
+// calling IPC exposed from preload script
+window.electron.ipcRenderer.once('ipc-example', (arg) => {
+  // eslint-disable-next-line no-console
+  console.log(arg);
+});
+window.electron.ipcRenderer.myPing();

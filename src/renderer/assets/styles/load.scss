@@ -1,0 +1,16 @@
+.load-card {
+  margin-top: 10vh;
+  margin-left: 2vh;
+  height: 60vh;
+  margin-right: 2vh;
+  td,
+  th {
+    vertical-align: baseline;
+    font-size: small;
+    width: fit-content;
+  }
+  button {
+    font-size: small;
+    text-transform: 'uppercase';
+  }
+}

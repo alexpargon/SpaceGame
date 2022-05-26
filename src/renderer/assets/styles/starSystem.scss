@@ -1,0 +1,53 @@
+.StarSystemDialog {
+  position: absolute !important;
+  color: white;
+  width: 60vw;
+  height: auto;
+  margin-left: 20vw;
+  margin-right: 20vw;
+  margin-top: 5em;
+  object-fit: contain;
+
+  .title-text {
+    color: orange;
+  }
+
+  .planet-group {
+    animation: rotate 5s infinite linear;
+  }
+
+  .asteroids-category {
+    filter: url(#filter);
+  }
+
+  .orbit {
+    pointer-events: visible;
+    /* stroke: var(--base-complement); */
+    stroke: white;
+    stroke-width: 2;
+    fill: none;
+  }
+
+  .orbit:hover {
+    stroke-width: 4;
+  }
+
+  .dwarf-category .orbit {
+    stroke: none;
+  }
+
+  .planet {
+    stroke: white;
+    stroke-width: 2;
+    fill: orange;
+  }
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
